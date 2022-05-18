@@ -1,0 +1,25 @@
+{% include "includes/header.html" %}
+{% include "includes/navbar.html" %}
+
+<br><br><br>
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ productForm }}
+                <input type="submit" name="Submit">
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+{% include "includes/footer.html" %}
+
