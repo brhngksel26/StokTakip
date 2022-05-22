@@ -22,8 +22,6 @@ class InStoreProductsForm(forms.ModelForm):
         salesProduct = self.cleaned_data.get("salesProducts")
         storeStock   = self.cleaned_data.get("storeStock")
 
-        print("hebe")
-
         for product in salesProduct:
 
             if storeStock > product.countStock:
